@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "kong" {
-  source = "github.com/aws-cloud-lab/kong-terraform-aws"
+  source = "https://github.com/awsautomation/kong-terraform-aws"
 
   vpc                   = "1-VPC-Kong-API-UAT"
   environment           = "dev"
@@ -39,7 +39,7 @@ module "kong" {
   ee_bintray_auth = " "
   
   tags = {
-     Owner = "tech_fur@outlook.com"
+     Owner = "farhan"
      Team = "DevOps"
   }
 }
